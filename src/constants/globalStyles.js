@@ -61,7 +61,7 @@ export default {
     alignItems: 'center',
     flexDirection: 'row',
     justifyContent: 'space-between',
-    paddingHorizontal: space3,
+    paddingHorizontal: getResponsiveFontSize(space3, space16, space16 * 4),
     gap: space1
   },
 
@@ -121,7 +121,7 @@ export default {
   scrollHeading: {
     color: colors.heading,
     ...fonts.bold,
-    fontSize: getResponsiveFontSize(22, 26, 30),
+    fontSize: getResponsiveFontSize(20, 24, 30),
     marginBottom: 4,
     marginLeft: space1,
     marginTop: getResponsiveFontSize(16, 26, 50)

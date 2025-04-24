@@ -19,7 +19,7 @@ import squirrelfy from '../functions/squirrelfy';
 import { getResponsiveFontSize } from '../constants/responsive';
 
 const screenWidth = Dimensions.get('window').width;
-const tileWidth = screenWidth > 600 ? screenWidth * 0.15 : screenWidth * 0.25; // example: smaller for mobile
+const tileWidth = screenWidth > 600 ? screenWidth * 0.15 : screenWidth * 0.27; // example: smaller for mobile
 const tileHeight = tileWidth * 1.44; // keep same aspect ratio
 
 function ShowScroller({ dataset, type, handleTilePress }) {
@@ -73,14 +73,16 @@ const styles = StyleSheet.create({
     width: tileWidth
   },
   rectangleImage: {
+    borderRadius: getResponsiveFontSize(4, 6, 8),
     alignItems: 'flex-start',
     cursor: 'pointer',
     display: 'flex',
     height: tileHeight,
     justifyContent: 'flex-end',
-    marginRight: 8,
+    marginRight: getResponsiveFontSize(10, 14, 18),
     resizeMode: 'cover',
-    width: tileWidth
+    width: tileWidth,
+    overflow: 'hidden'
   },
   round: {
     backgroundColor: colors.infoGrey,

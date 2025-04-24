@@ -9,6 +9,7 @@ import PromotionPlay from './PromotionPlay';
 import SvgCheck from '../icons/Svg.Check';
 import SvgPlus from '../icons/Svg.Plus';
 import SvgPlay from '../icons/Svg.Play';
+import { getResponsiveFontSize } from '../constants/responsive';
 
 function PromotionBanner({ handleTilePress }) {
   // local state
@@ -64,16 +65,16 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     color: colors.heading,
     ...fonts.bold,
-    fontSize: 36,
+    fontSize: getResponsiveFontSize(36, 46, 60),
     fontWeight: 900,
-    height: 90,
+    height: getResponsiveFontSize(90, 130, 190),
     marginBottom: 24,
     // marginTop: 16,
     textAlign: 'center',
     textShadowColor: '#000',
     textShadowOffset: { width: 1, height: 1 },
     textShadowRadius: 2,
-    width: 291
+    width: getResponsiveFontSize(291, 340, 500)
   }
 });
 

@@ -5,8 +5,8 @@ const screenWidth = Dimensions.get('window').width;
 
 export const breakpoints = {
   mobile: 0,
-  tablet: 768,
-  desktop: 1024
+  tablet: 1100,
+  desktop: 1400
 };
 
 export const isMobile = screenWidth < breakpoints.tablet;
