@@ -10,6 +10,8 @@ import PromotionBanner from '../components/PromotionBanner';
 import ShowScroller from '../components/ShowScroller';
 import useTopFilms from '../hooks/useFetchTopFilms';
 import mockData from '../mockdata/data';
+import useFilmById from '../hooks/useFetchFilmById';
+import FilmPoster from '../components/FilmPoster';
 
 function Home() {
   // on active tab press, scroll to top
@@ -19,8 +21,15 @@ function Home() {
   // local state
   const [showHeader, setShowHeader] = React.useState(true);
   const [offset, setOffset] = React.useState(0);
+  const [id, setId] = React.useState(null);
 
-  const { films: topFilms, loading, error } = useTopFilms(2);
+  const {
+    filmData,
+    loading: filmDataLoading,
+    error: filmDataError
+  } = useFilmById(id);
+
+  const { films: topFilms, loading, error } = useTopFilms(20);
 
   const onScroll = (event) => {
     let show = showHeader;
@@ -37,8 +46,14 @@ function Home() {
     setOffset(currentOffset);
   };
 
+  const handleTilePress = (film) => {
+    console.log('press', film);
+    setId(film.id);
+  };
+
   return (
     <View style={gStyle.container}>
+      {filmData && <FilmPoster film={filmData} />}
       <HeaderHome show={showHeader} />
 
       <ScrollView
@@ -54,22 +69,25 @@ function Home() {
         <ShowScroller dataset="previews" type="round" /> */}
 
         <Text style={gStyle.heading}>My Stash</Text>
-        <ShowScroller dataset={Object.values(mockData.myList)} />
+        <ShowScroller
+          dataset={Object.values(mockData.myList)}
+          handleTilePress={handleTilePress}
+        />
 
         <Text style={gStyle.heading}>Popular on Nutflix</Text>
-        <ShowScroller dataset={topFilms} />
+        <ShowScroller dataset={topFilms} handleTilePress={handleTilePress} />
 
         <Text style={gStyle.heading}>Films we are nutty about</Text>
-        <ShowScroller />
+        <ShowScroller handleTilePress={handleTilePress} />
 
         <Text style={gStyle.heading}>Watch It Again</Text>
-        <ShowScroller />
+        <ShowScroller handleTilePress={handleTilePress} />
 
         <Text style={gStyle.heading}>NUTFLIX ORIGINALS</Text>
-        <ShowScroller />
+        <ShowScroller handleTilePress={handleTilePress} />
 
         <Text style={gStyle.heading}>Documentaries</Text>
-        <ShowScroller />
+        <ShowScroller handleTilePress={handleTilePress} />
 
         <View style={gStyle.spacer3} />
       </ScrollView>
