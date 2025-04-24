@@ -131,7 +131,7 @@ export const dummyTopFilms = [
   }
 ];
 
-export const useTopFilms = (limit) => {
+const useTopFilms = (limit) => {
   const [films, setFilms] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);

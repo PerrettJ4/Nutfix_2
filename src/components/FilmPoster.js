@@ -71,7 +71,10 @@ function FilmPoster({ film, closeFilmModal }) {
       >
         <View style={styles.modalOverlay}>
           <View style={styles.modalContent}>
-            <ScrollView contentContainerStyle={styles.modalScrollContent}>
+            <ScrollView
+              contentContainerStyle={styles.modalScrollContent}
+              showsVerticalScrollIndicator={false}
+            >
               <Image
                 source={{ uri: film.primaryImage }}
                 style={styles.poster}
@@ -186,8 +189,7 @@ const styles = StyleSheet.create({
   description: {
     color: colors.white,
     fontSize: 16,
-    marginVertical: 10,
-    textAlign: 'justify'
+    marginVertical: 10
   },
   details: {
     color: colors.white,
