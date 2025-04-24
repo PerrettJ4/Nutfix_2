@@ -123,7 +123,7 @@ a couple manual changes within `index.html` i found needed to be made so far:
 - Home Top Navbar
   - show/hide on scroll
   - start of stack navigation in nav bar
-  - TV Shows, Movies and My List screens
+  - TV Shows, Movies and My Stash screens
   - start of mock data and images for shows/movies
 - More Stack
   - menu list (scrollable) created, with current version on screen
@@ -147,7 +147,7 @@ a couple manual changes within `index.html` i found needed to be made so far:
 - Tab Navigation
   - Home
     - simple banner (bandersnatch)
-    - add to my list
+    - add to My Stash
     - simple wireframe with FlatList (horizontal scroll)
   - Search
     - simple animation onFocus and onBlur of search input

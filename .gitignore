@@ -1,0 +1,13 @@
+node_modules/**/*
+.expo/*
+web-build/*
+.expo-shared/*
+web-build/*
+npm-debug.*
+*.jks
+*.p12
+*.key
+*.mobileprovision
+
+# Local Netlify folder
+.netlify
