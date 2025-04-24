@@ -27,7 +27,7 @@ TouchText.propTypes = {
 const styles = StyleSheet.create({
   text: {
     color: colors.white,
-    fontFamily: fonts.medium
+    ...fonts.medium
   }
 });
 

@@ -86,9 +86,9 @@ const styles = StyleSheet.create({
     alignItems: 'flex-start',
     backgroundColor: colors.black20,
     flexDirection: 'row',
-    paddingBottom: 4,
+    paddingBottom: 10,
     paddingHorizontal: 16,
-    paddingTop: device.iPhoneNotch ? 54 : 30,
+    paddingTop: device.iPhoneNotch ? 34 : 10,
     position: 'absolute',
     width: '100%',
     zIndex: 10
@@ -96,7 +96,8 @@ const styles = StyleSheet.create({
   logo: {
     height: 35,
     marginRight: 48,
-    width: 20
+    width: 40,
+    resizeMode: 'contain'
   },
   containerMenu: {
     alignItems: 'center',
@@ -106,7 +107,7 @@ const styles = StyleSheet.create({
   },
   text: {
     color: colors.white,
-    fontFamily: fonts.medium,
+    ...fonts.medium,
     marginRight: 24
   }
 });

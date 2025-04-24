@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
     backgroundColor: colors.black50,
     borderRadius: 4,
     color: colors.infoGrey,
-    fontFamily: fonts.light,
+    ...fonts.light,
     marginTop: 2,
     padding: 4
   },

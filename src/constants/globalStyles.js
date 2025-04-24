@@ -61,7 +61,7 @@ export default {
     alignItems: 'center',
     flexDirection: 'row',
     justifyContent: 'space-between',
-    paddingHorizontal: space1,
+    paddingHorizontal: space3,
     gap: space1
   },
 
@@ -112,11 +112,19 @@ export default {
   // ///////////////////////////////////////////////////////////////////////////
   heading: {
     color: colors.heading,
-    fontFamily: fonts.medium,
+    ...fonts.bold,
     fontSize: getResponsiveFontSize(22, 26, 30),
     marginBottom: 4,
     marginLeft: space1,
     marginTop: 16
+  },
+  scrollHeading: {
+    color: colors.heading,
+    ...fonts.bold,
+    fontSize: getResponsiveFontSize(22, 26, 30),
+    marginBottom: 4,
+    marginLeft: space1,
+    marginTop: getResponsiveFontSize(16, 26, 50)
   },
 
   // nav tab

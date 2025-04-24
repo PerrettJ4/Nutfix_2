@@ -72,7 +72,7 @@ const styles = StyleSheet.create({
   },
   backText: {
     color: colors.white,
-    fontFamily: fonts.bold
+    ...fonts.bold
   },
   containerTitle: {
     flex: 4,
@@ -93,7 +93,7 @@ const styles = StyleSheet.create({
   },
   saveText: {
     color: colors.moreSaveText,
-    fontFamily: fonts.bold
+    ...fonts.bold
   }
 });
 

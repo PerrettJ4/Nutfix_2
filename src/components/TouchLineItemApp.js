@@ -52,13 +52,13 @@ const styles = StyleSheet.create({
   },
   tagline: {
     color: colors.moreSectionText,
-    fontFamily: fonts.regular,
+    ...fonts.regular,
     fontSize: 12,
     marginTop: 4
   },
   text: {
     color: colors.heading,
-    fontFamily: fonts.regular,
+    ...fonts.regular,
     fontSize: 16
   },
   arrow: {

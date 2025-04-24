@@ -4,14 +4,11 @@ import { colors, fonts, gStyle, images } from '../constants';
 
 // components
 import PromotionPlay from './PromotionPlay';
-import TouchTextIcon from './TouchTextIcon';
 
 // icons
 import SvgCheck from '../icons/Svg.Check';
-import SvgInfo from '../icons/Svg.Info';
 import SvgPlus from '../icons/Svg.Plus';
-
-import mockData from '../mockdata/data';
+import SvgPlay from '../icons/Svg.Play';
 
 function PromotionBanner({ handleTilePress }) {
   // local state
@@ -39,18 +36,12 @@ function PromotionBanner({ handleTilePress }) {
         <Text style={styles.titleText}>Planut of the Squirrels</Text>
 
         <View style={gStyle.flexRowSpace}>
-          <TouchTextIcon
-            icon={icon}
-            onPress={() => setAdded(!added)}
-            text="My Stash"
-          />
-
           <PromotionPlay onPress={handlePressInfo} />
-
-          <TouchTextIcon
-            icon={<SvgInfo />}
-            onPress={handlePressInfo}
-            text="Info"
+          <PromotionPlay
+            onPress={() => setAdded(!added)}
+            icon={icon}
+            text="My Stash"
+            backgroundColor={colors.castGrey}
           />
         </View>
       </View>
@@ -72,7 +63,7 @@ const styles = StyleSheet.create({
   titleText: {
     alignSelf: 'center',
     color: colors.heading,
-    fontFamily: fonts.bold,
+    ...fonts.bold,
     fontSize: 36,
     fontWeight: 900,
     height: 90,

@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
   text: {
     color: colors.textGrey,
     flex: 2,
-    fontFamily: fonts.regular,
+    ...fonts.regular,
     fontSize: 16
   },
   arrow: {

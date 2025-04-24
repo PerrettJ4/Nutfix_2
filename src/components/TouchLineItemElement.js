@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
   },
   text: {
     color: colors.heading,
-    fontFamily: fonts.regular,
+    ...fonts.regular,
     fontSize: 16
   },
   element: {

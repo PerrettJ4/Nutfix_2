@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
   },
   text: {
     color: colors.white,
-    fontFamily: fonts.regular,
+    ...fonts.regular,
     fontSize: 16,
     marginTop: 8,
     textAlign: 'center'

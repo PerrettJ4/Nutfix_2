@@ -26,13 +26,13 @@ const styles = StyleSheet.create({
   },
   connect: {
     color: colors.textGrey,
-    fontFamily: fonts.regular,
+    ...fonts.regular,
     fontSize: 16,
     textAlign: 'center'
   },
   deviceText: {
     color: colors.castConnectDeviceText,
-    fontFamily: fonts.bold,
+    ...fonts.bold,
     fontSize: 16,
     padding: 20,
     textAlign: 'center'

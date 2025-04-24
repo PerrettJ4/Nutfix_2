@@ -1,5 +1,6 @@
 const netflix = require('../assets/images/netflix-logo.png');
-const netflixTransparent = require('../assets/images/netflix-logo-transparent.png');
+// const netflixTransparent = require('../assets/images/netflix-logo-transparent.png');
+const netflixTransparent = require('../assets/images/Scrat_Ice_Age.png');
 const netflixFull = require('../assets/images/netflix-logo-full.png');
 
 const bannerBander = require('../assets/images/content/black-mirror-bandersnatch.jpg');

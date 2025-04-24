@@ -113,7 +113,7 @@ const styles = StyleSheet.create({
   },
   closeText: {
     color: colors.white,
-    fontFamily: fonts.light,
+    ...fonts.light,
     fontSize: 16
   }
 });

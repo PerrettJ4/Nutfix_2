@@ -74,12 +74,12 @@ const styles = StyleSheet.create({
   },
   username: {
     color: colors.inactiveGrey,
-    fontFamily: fonts.medium,
+    ...fonts.medium,
     fontSize: 12
   },
   usernameActive: {
     color: colors.white,
-    fontFamily: fonts.bold
+    ...fonts.bold
   },
   containerPlus: {
     alignItems: 'center',
@@ -98,7 +98,7 @@ const styles = StyleSheet.create({
   },
   manageText: {
     color: colors.inactiveGrey,
-    fontFamily: fonts.medium,
+    ...fonts.medium,
     marginLeft: 4
   }
 });

@@ -1,22 +1,45 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import {
+  Pressable,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View
+} from 'react-native';
 import { colors, fonts, gStyle } from '../constants';
 
 // icons
 import SvgPlay from '../icons/Svg.Play';
 
-function PromotionPlay({ icon, onPress, text }) {
+function PromotionPlay({
+  icon,
+  onPress,
+  text,
+  backgroundColor = colors.white
+}) {
   return (
     <TouchableOpacity
       activeOpacity={gStyle.activeOpacity}
       onPress={onPress}
-      style={styles.container}
+      style={[styles.container, { backgroundColor }]}
     >
       <View style={styles.icon}>
-        {React.cloneElement(icon, { fill: colors.black })}
+        {React.cloneElement(icon, {
+          fill: backgroundColor !== colors.white ? colors.white : colors.black
+        })}
       </View>
-      <Text style={styles.text}>{text}</Text>
+      <Text
+        style={[
+          styles.text,
+          {
+            color:
+              backgroundColor !== colors.white ? colors.white : colors.black
+          }
+        ]}
+      >
+        {text}
+      </Text>
     </TouchableOpacity>
   );
 }
@@ -48,7 +71,7 @@ const styles = StyleSheet.create({
   },
   text: {
     color: colors.black,
-    fontFamily: fonts.medium,
+    ...fonts.medium,
     fontSize: 18
   },
   icon: {

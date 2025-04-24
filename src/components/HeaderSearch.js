@@ -113,7 +113,7 @@ const styles = StyleSheet.create({
     backgroundColor: colors.searchBarBg,
     borderRadius: 4,
     color: colors.heading,
-    fontFamily: fonts.regular,
+    ...fonts.regular,
     fontSize: 16,
     paddingHorizontal: 8,
     paddingVertical: 4,
@@ -124,7 +124,7 @@ const styles = StyleSheet.create({
   },
   cancel: {
     color: colors.heading,
-    fontFamily: fonts.light,
+    ...fonts.light,
     fontSize: 16,
     paddingVertical: 4,
     textAlign: 'center'

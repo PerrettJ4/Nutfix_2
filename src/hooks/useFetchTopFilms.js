@@ -131,6 +131,129 @@ export const dummyTopFilms = [
   }
 ];
 
+export const dummyTopSeries = [
+  {
+    id: 'tt0903747',
+    title: 'Breaking Bad',
+    image:
+      'https://m.media-amazon.com/images/M/MV5BMzU5ZGYzNmQtMTdhYy00OGRiLTg0NmQtYjVjNzliZTg1ZGE4XkEyXkFqcGc@._V1_.jpg'
+  },
+  {
+    id: 'tt5491994',
+    title: 'Planet Earth II',
+    image:
+      'https://m.media-amazon.com/images/M/MV5BMzY4NDBkMWYtYzdkYy00YzBjLWJmODctMWM4YjYzZTdjNWE5XkEyXkFqcGc@._V1_.jpg'
+  },
+  {
+    id: 'tt0795176',
+    title: 'Planet Earth',
+    image:
+      'https://m.media-amazon.com/images/M/MV5BY2NjNDUzOTgtMDFmNC00ZGQ4LWE5MDctMzczNGVlOGU1N2MyXkEyXkFqcGc@._V1_.jpg'
+  },
+  {
+    id: 'tt0185906',
+    title: 'Band of Brothers',
+    image:
+      'https://m.media-amazon.com/images/M/MV5BMTQ3NTdmOTEtZTRmMi00NTg5LWI5NmUtYTNiOTc0ZmNkODU0XkEyXkFqcGc@._V1_.jpg'
+  },
+  {
+    id: 'tt7366338',
+    title: 'Chernobyl',
+    image:
+      'https://m.media-amazon.com/images/M/MV5BNzU0OTI4YTQtNGQ1ZS00ZjA4LTg3MTMtZjkyZWNjN2RiZDJmXkEyXkFqcGc@._V1_.jpg'
+  },
+  {
+    id: 'tt0306414',
+    title: 'The Wire',
+    image:
+      'https://m.media-amazon.com/images/M/MV5BZWYyNmRhYjktNjBhNC00M2NhLWEzYmMtZDYwNmIyZTRiZWMzXkEyXkFqcGc@._V1_.jpg'
+  },
+  {
+    id: 'tt0417299',
+    title: 'Avatar: The Last Airbender',
+    image:
+      'https://m.media-amazon.com/images/M/MV5BMDMwMThjYWYtY2Q2OS00OGM2LTlkODQtNDJlZTZmMjAyYmFhXkEyXkFqcGc@._V1_.jpg'
+  },
+  {
+    id: 'tt6769208',
+    title: 'Blue Planet II',
+    image:
+      'https://m.media-amazon.com/images/M/MV5BNmUwYThjM2UtNTg1Yy00MzRlLThhMmYtNjlmOWU0ZmQxZDA3XkEyXkFqcGc@._V1_.jpg'
+  },
+  {
+    id: 'tt0141842',
+    title: 'The Sopranos',
+    image:
+      'https://m.media-amazon.com/images/M/MV5BMjRmMTNiMTQtMDg1ZS00MGM1LWE1MGUtYjEzMGFjNWUzOWRkXkEyXkFqcGc@._V1_.jpg'
+  },
+  {
+    id: 'tt2395695',
+    title: 'Cosmos: A Spacetime Odyssey',
+    image:
+      'https://m.media-amazon.com/images/M/MV5BYTRlMzk0NzctNTI3Ni00N2E2LWJiNGMtMDdlNjk1YWNmMzkyXkEyXkFqcGc@._V1_.jpg'
+  },
+  {
+    id: 'tt0081846',
+    title: 'Cosmos',
+    image:
+      'https://m.media-amazon.com/images/M/MV5BOTA5MWFhMzAtOWU1OS00Yjk4LTlkNGItNGI3N2VkNzcyNGU2XkEyXkFqcGc@._V1_.jpg'
+  },
+  {
+    id: 'tt9253866',
+    title: 'Our Planet',
+    image:
+      'https://m.media-amazon.com/images/M/MV5BZDE1NzlkNWMtNzFiMC00ZTgxLTgyMmItOTU5OGI2NWQ4MDMxXkEyXkFqcGc@._V1_.jpg'
+  },
+  {
+    id: 'tt0944947',
+    title: 'Game of Thrones',
+    image:
+      'https://m.media-amazon.com/images/M/MV5BMTNhMDJmNmYtNDQ5OS00ODdlLWE0ZDAtZTgyYTIwNDY3OTU3XkEyXkFqcGc@._V1_.jpg'
+  },
+  {
+    id: 'tt7678620',
+    title: 'Bluey',
+    image:
+      'https://m.media-amazon.com/images/M/MV5BYWU1YmQzMjEtMDNjOS00MGIyLWExY2ItZDAzNmU5NWViMGZmXkEyXkFqcGc@._V1_.jpg'
+  },
+  {
+    id: 'tt0071075',
+    title: 'The World at War',
+    image:
+      'https://m.media-amazon.com/images/M/MV5BM2I1OGUyNmYtZmNiOC00OGQ4LWFlNDEtYTM5ZTAxMDI4ZmMyXkEyXkFqcGc@._V1_.jpg'
+  },
+  {
+    id: 'tt1355642',
+    title: 'Fullmetal Alchemist: Brotherhood',
+    image:
+      'https://m.media-amazon.com/images/M/MV5BMzNiODA5NjYtYWExZS00OTc4LTg3N2ItYWYwYTUyYmM5MWViXkEyXkFqcGc@._V1_.jpg'
+  },
+  {
+    id: 'tt1533395',
+    title: 'Life',
+    image:
+      'https://m.media-amazon.com/images/M/MV5BZDJjMzJiMTktMWZkZi00YWY0LWJjNGUtY2ZmNTFlOThhZTA4XkEyXkFqcGc@._V1_.jpg'
+  },
+  {
+    id: 'tt2861424',
+    title: 'Rick and Morty',
+    image:
+      'https://m.media-amazon.com/images/M/MV5BZGQyZjk2MzMtMTcyNC00NGU3LTlmNjItNDExMWM4ZDFhYmQ2XkEyXkFqcGc@._V1_.jpg'
+  },
+  {
+    id: 'tt8420184',
+    title: 'The Last Dance',
+    image:
+      'https://m.media-amazon.com/images/M/MV5BOTQyYmQ1N2UtYjFkNS00NzgyLTk5YTUtYjExMDdjOTA3MGU2XkEyXkFqcGc@._V1_.jpg'
+  },
+  {
+    id: 'tt0052520',
+    title: 'The Twilight Zone',
+    image:
+      'https://m.media-amazon.com/images/M/MV5BZjdmOTE3NjItY2JkMi00YjlhLWI0M2UtZjEwZTQ4ZDBkM2I0XkEyXkFqcGc@._V1_.jpg'
+  }
+];
+
 const useTopFilms = (limit) => {
   const [films, setFilms] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -142,7 +265,7 @@ const useTopFilms = (limit) => {
     const fetchTopFilms = async () => {
       setLoading(true);
       try {
-        const url = `https://${options.headers['x-rapidapi-host']}/api/title/get-chart-rankings?rankingsChartType=TOP_250&limit=${limit}`;
+        const url = `https://${options.headers['x-rapidapi-host']}/api/title/get-chart-rankings?rankingsChartType=TOP_250_TV&limit=${limit}`;
         const response = await fetch(url, options);
         const text = await response.text();
 
@@ -158,7 +281,7 @@ const useTopFilms = (limit) => {
             };
           }
         );
-
+        // console.log(JSON.stringify(simplifiedFilms, null, 2));
         setFilms(simplifiedFilms);
       } catch (err) {
         console.error('Error fetching or parsing data:', err);

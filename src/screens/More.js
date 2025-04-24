@@ -77,7 +77,7 @@ More.propTypes = {
 const styles = StyleSheet.create({
   versionText: {
     color: colors.moreVersionText,
-    fontFamily: fonts.regular,
+    ...fonts.regular,
     fontSize: 18,
     paddingHorizontal: 8,
     paddingVertical: 16

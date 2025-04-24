@@ -102,7 +102,7 @@ const styles = StyleSheet.create({
   },
   heading: {
     color: colors.moreSectionText,
-    fontFamily: fonts.light,
+    ...fonts.light,
     fontSize: 16,
     textTransform: 'uppercase'
   },

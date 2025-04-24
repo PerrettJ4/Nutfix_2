@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
   },
   text: {
     color: colors.white,
-    fontFamily: fonts.regular,
+    ...fonts.regular,
     fontSize: 16,
     marginBottom: 24,
     marginTop: 8,
@@ -102,7 +102,7 @@ const styles = StyleSheet.create({
   },
   switchLabel: {
     color: colors.white,
-    fontFamily: fonts.light,
+    ...fonts.light,
     fontSize: 16,
     marginRight: 8,
     textTransform: 'uppercase'

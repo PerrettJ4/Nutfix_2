@@ -97,7 +97,7 @@ const styles = StyleSheet.create({
   },
   filmText: {
     color: colors.heading,
-    fontFamily: fonts.medium,
+    ...fonts.medium,
     fontSize: getResponsiveFontSize(12, 13, 18),
     textShadowColor: '#000',
     textShadowOffset: { width: 1, height: 1 },

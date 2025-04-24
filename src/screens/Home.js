@@ -8,7 +8,7 @@ import Cast from '../components/Cast';
 import HeaderHome from '../components/HeaderHome';
 import PromotionBanner from '../components/PromotionBanner';
 import ShowScroller from '../components/ShowScroller';
-import useTopFilms from '../hooks/useFetchTopFilms';
+import useTopFilms, { dummyTopSeries } from '../hooks/useFetchTopFilms';
 import mockData from '../mockdata/data';
 import useFilmById from '../hooks/useFetchFilmById';
 import FilmPoster from '../components/FilmPoster';
@@ -69,25 +69,34 @@ function Home() {
         <PromotionBanner handleTilePress={handleTilePress} />
         {/* <Text style={gStyle.heading}>Previews</Text>
         <ShowScroller dataset="previews" type="round" /> */}
-        <Text style={gStyle.heading}>My Stash</Text>
+        <Text style={gStyle.scrollHeading}>My Stash</Text>
         <ShowScroller
           dataset={Object.values(mockData.myList)}
           handleTilePress={handleTilePress}
         />
-        <Text style={gStyle.heading}>Popular on Nutflix</Text>
+        <Text style={gStyle.scrollHeading}>Popular on Nutflix</Text>
         <ShowScroller dataset={topFilms} handleTilePress={handleTilePress} />
-        <Text style={gStyle.heading}>Films we are nutty about</Text>
+        <Text style={gStyle.scrollHeading}>Films we are nutty about</Text>
 
         <ShowScroller
           handleTilePress={handleTilePress}
           dataset={Object.values(mockData.nuttyAbout)}
         />
-        <Text style={gStyle.heading}>Watch It Again</Text>
-        <ShowScroller handleTilePress={handleTilePress} />
-        <Text style={gStyle.heading}>NUTFLIX ORIGINALS</Text>
-        <ShowScroller handleTilePress={handleTilePress} />
-        <Text style={gStyle.heading}>Docusquirrelies</Text>
-        <ShowScroller handleTilePress={handleTilePress} />
+        <Text style={gStyle.scrollHeading}>Watch It Again</Text>
+        <ShowScroller
+          handleTilePress={handleTilePress}
+          dataset={Object.values(mockData.watchItAgain)}
+        />
+        <Text style={gStyle.scrollHeading}>NUTFLIX ORIGINALS</Text>
+        <ShowScroller
+          handleTilePress={handleTilePress}
+          dataset={dummyTopSeries}
+        />
+        <Text style={gStyle.scrollHeading}>Docusquirrelies</Text>
+        <ShowScroller
+          handleTilePress={handleTilePress}
+          dataset={Object.values(mockData.docusquirrelies)}
+        />
         <View style={gStyle.spacer3} />
       </ScrollView>
 
