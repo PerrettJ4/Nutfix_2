@@ -26,7 +26,8 @@ function Home() {
   const {
     filmData,
     loading: filmDataLoading,
-    error: filmDataError
+    error: filmDataError,
+    closeFilmModal
   } = useFilmById(id);
 
   const { films: topFilms, loading, error } = useTopFilms(20);
@@ -48,12 +49,14 @@ function Home() {
 
   const handleTilePress = (film) => {
     console.log('press', film);
-    setId(film.id);
+    setId(film);
   };
 
   return (
     <View style={gStyle.container}>
-      {filmData && <FilmPoster film={filmData} />}
+      {filmData && (
+        <FilmPoster film={filmData} closeFilmModal={closeFilmModal} />
+      )}
       <HeaderHome show={showHeader} />
 
       <ScrollView
@@ -63,32 +66,28 @@ function Home() {
         scrollEventThrottle={16}
         showsVerticalScrollIndicator={false}
       >
-        <PromotionBanner />
-
+        <PromotionBanner handleTilePress={handleTilePress} />
         {/* <Text style={gStyle.heading}>Previews</Text>
         <ShowScroller dataset="previews" type="round" /> */}
-
         <Text style={gStyle.heading}>My Stash</Text>
         <ShowScroller
           dataset={Object.values(mockData.myList)}
           handleTilePress={handleTilePress}
         />
-
         <Text style={gStyle.heading}>Popular on Nutflix</Text>
         <ShowScroller dataset={topFilms} handleTilePress={handleTilePress} />
-
         <Text style={gStyle.heading}>Films we are nutty about</Text>
-        <ShowScroller handleTilePress={handleTilePress} />
 
+        <ShowScroller
+          handleTilePress={handleTilePress}
+          dataset={Object.values(mockData.nuttyAbout)}
+        />
         <Text style={gStyle.heading}>Watch It Again</Text>
         <ShowScroller handleTilePress={handleTilePress} />
-
         <Text style={gStyle.heading}>NUTFLIX ORIGINALS</Text>
         <ShowScroller handleTilePress={handleTilePress} />
-
-        <Text style={gStyle.heading}>Documentaries</Text>
+        <Text style={gStyle.heading}>Docusquirrelies</Text>
         <ShowScroller handleTilePress={handleTilePress} />
-
         <View style={gStyle.spacer3} />
       </ScrollView>
 

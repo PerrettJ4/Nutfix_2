@@ -1,10 +1,10 @@
-import dumbData from './dumbData.json';
+import nuttyAbout from './nuttyAbout.json';
 
 import myList from './myList.json';
 import previews from './previews.json';
 
 export default {
-  dumbData,
+  nuttyAbout,
 
   myList,
   previews

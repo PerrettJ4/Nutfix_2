@@ -1,3 +1,5 @@
+import nuttify from './nutify';
+
 const animals = [
   'Knight',
   'Schindler',
@@ -235,9 +237,11 @@ const animals = [
   'God'
 ];
 
-export function squirrelfy(string) {
+export default function squirrelfy(string) {
   const regex = new RegExp(animals.join('|'), 'gi');
-  return string.replace(regex, (match) =>
-    match[0] === match[0].toUpperCase() ? 'Squirrel' : 'squirrel'
+  return nuttify(
+    string.replace(regex, (match) =>
+      match[0] === match[0].toUpperCase() ? 'Squirrel' : 'squirrel'
+    )
   );
 }

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "tt0105236",
+    "title": "Reservoir Dogs",
+    "image": "https://photos1.blogger.com/blogger/386/2428/1600/squirrel_-_in_sunglasses_and_cigarette.0.jpg",
+    "description": "When a simple jewellery heist goes horribly wrong, the surviving criminals begin to suspect that one of them is a police informant.",
+    "rating": 83,
+    "actors": "Harvey Keitel, Tim Roth, Michael Madsen",
+    "year": "1992",
+    "genre": "Crime, Drama, Thriller"
+  },
+  {
+    "id": "tt0068646",
+    "title": "The Godfather",
+    "image": "https://live.staticflickr.com/3007/3582044425_940fbd8171_w.jpg",
+    "description": "An organized crime dynasty's aging patriarch transfers control of his clandestine empire to his reluctant son.",
+    "rating": 92,
+    "actors": "Marlon Brando, Al Pacino, James Caan",
+    "year": "1972",
+    "genre": "Crime, Drama"
+  },
+  {
+    "id": "tt0088247",
+    "title": "The Terminator",
+    "image": "https://i.pinimg.com/originals/04/37/4b/04374bd1e9e5876d838f1be5f98b8dd4.jpg",
+    "description": "A human soldier is sent from 2029 to 1984 to stop an almost indestructible cyborg killing machine, sent from the same year, which has been programmed to execute a young woman whose unborn son is the key to humanity's future salvation",
+    "rating": 80,
+    "actors": "Arnold Schwarzenegger, Linda Hamilton, Michael Biehn",
+    "year": "1984",
+    "genre": "Action, Sci-Fi"
+  },
+  {
+    "id": "tt0063442",
+    "title": "Planet of the Apes",
+    "image": "https://s.abcnews.com/images/Lifestyle/CT_squirrels_on_horse_01_as_160527_4x3_992.jpg",
+    "description": "In 2029, an Air Force astronaut crash-lands on a mysterious planet where evolved, talking apes dominate a race of primitive humans.",
+    "rating": 80,
+    "actors": "Mark Wahlberg, Helena Bonham Carter, Tim Roth",
+    "year": "1968",
+    "genre": "Adventure, Sci-Fi"
+  },
+  {
+    "id": "tt2975590",
+    "title": "Batman v Superman: Dawn of Justice",
+    "image": "https://i.pinimg.com/originals/6d/69/1f/6d691f916121f6b69764a44cd53dcd34.jpg",
+    "description": "Fearing that the actions of Superman are left unchecked, Batman takes on the Man of Steel, while the world wrestles with what kind of a hero it really needs.",
+    "rating": 64,
+    "actors": "Ben Affleck, Henry Cavill, Amy Adams",
+    "year": "2016",
+    "genre": "Action, Adventure, Sci-Fi"
+  }
+]

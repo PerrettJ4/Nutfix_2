@@ -37,13 +37,19 @@ TouchTextIcon.propTypes = {
 const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
+    // backgroundColor: colors.black50,
+    borderRadius: 4,
     flex: 1,
     justifyContent: 'center'
+    // paddingVertical: 8
   },
   text: {
+    backgroundColor: colors.black50,
+    borderRadius: 4,
     color: colors.infoGrey,
     fontFamily: fonts.light,
-    marginTop: 2
+    marginTop: 2,
+    padding: 4
   },
   icon: {
     justifyContent: 'center'

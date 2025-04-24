@@ -14,8 +14,7 @@ import { ImageBackground } from 'react-native-web';
 
 import { colors, fonts, gStyle } from '../constants';
 
-import { nuttify } from '../functions/nutify';
-import { squirrelfy } from '../functions/squirrelfy';
+import squirrelfy from '../functions/squirrelfy';
 
 import { getResponsiveFontSize } from '../constants/responsive';
 
@@ -40,9 +39,7 @@ function ShowScroller({ dataset, type, handleTilePress }) {
                 style={styles[`${type}Image`]}
                 source={item.image}
               >
-                <Text style={styles.filmText}>
-                  {nuttify(squirrelfy(item.title))}
-                </Text>
+                <Text style={styles.filmText}>{squirrelfy(item.title)}</Text>
               </ImageBackground>
             </Pressable>
           );
@@ -56,7 +53,7 @@ function ShowScroller({ dataset, type, handleTilePress }) {
 }
 
 ShowScroller.defaultProps = {
-  dataset: Array.from([].fill(10, null)),
+  dataset: [],
   type: 'rectangle',
   handleTilePress: () => {}
 };
@@ -109,7 +106,8 @@ const styles = StyleSheet.create({
     backgroundColor: `${colors.bgGrey}aa`, // cleaner template literal
     paddingHorizontal: 4, // optional: adds breathing room inside bg
     paddingVertical: 2, // optional: improves readability
-    borderRadius: 4 // softens the background box edges
+    borderRadius: 4, // softens the background box edges,
+    userSelect: 'none'
   }
 });
 

@@ -159,8 +159,6 @@ export const useTopFilms = (limit) => {
           }
         );
 
-        console.log(simplifiedFilms);
-        console.log(JSON.stringify(simplifiedFilms, null, 2));
         setFilms(simplifiedFilms);
       } catch (err) {
         console.error('Error fetching or parsing data:', err);

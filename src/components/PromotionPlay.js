@@ -42,6 +42,7 @@ const styles = StyleSheet.create({
     borderRadius: 4,
     flex: 1,
     flexDirection: 'row',
+    gap: 4,
     justifyContent: 'center',
     paddingVertical: 8
   },

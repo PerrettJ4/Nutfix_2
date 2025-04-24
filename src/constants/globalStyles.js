@@ -1,5 +1,6 @@
 import colors from './colors';
 import fonts from './fonts';
+import { getResponsiveFontSize } from './responsive';
 
 // define space grid
 // /////////////////////////////////////////////////////////////////////////////
@@ -59,7 +60,9 @@ export default {
   flexRowSpace: {
     alignItems: 'center',
     flexDirection: 'row',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
+    paddingHorizontal: space1,
+    gap: space1
   },
 
   // margin
@@ -110,7 +113,7 @@ export default {
   heading: {
     color: colors.heading,
     fontFamily: fonts.medium,
-    fontSize: 22,
+    fontSize: getResponsiveFontSize(22, 26, 30),
     marginBottom: 4,
     marginLeft: space1,
     marginTop: 16

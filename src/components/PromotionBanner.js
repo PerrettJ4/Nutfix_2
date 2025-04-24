@@ -11,10 +11,23 @@ import SvgCheck from '../icons/Svg.Check';
 import SvgInfo from '../icons/Svg.Info';
 import SvgPlus from '../icons/Svg.Plus';
 
-function PromotionBanner() {
+import mockData from '../mockdata/data';
+
+function PromotionBanner({ handleTilePress }) {
   // local state
   const [added, setAdded] = React.useState(false);
   const icon = added ? <SvgCheck /> : <SvgPlus />;
+
+  const handlePressInfo = () => {
+    handleTilePress({
+      id: 'tt0063442',
+      title: 'Planet of the Apes',
+      image:
+        'https://s.abcnews.com/images/Lifestyle/CT_squirrels_on_horse_01_as_160527_4x3_992.jpg',
+      description:
+        'In 2029, an Air Force astronaut crash-lands on a mysterious planet where evolved, talking apes dominate a race of primitive humans.'
+    });
+  };
 
   return (
     <ImageBackground
@@ -32,9 +45,13 @@ function PromotionBanner() {
             text="My Stash"
           />
 
-          <PromotionPlay onPress={() => null} />
+          <PromotionPlay onPress={handlePressInfo} />
 
-          <TouchTextIcon icon={<SvgInfo />} onPress={() => null} text="Info" />
+          <TouchTextIcon
+            icon={<SvgInfo />}
+            onPress={handlePressInfo}
+            text="Info"
+          />
         </View>
       </View>
     </ImageBackground>
