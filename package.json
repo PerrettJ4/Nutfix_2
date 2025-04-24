@@ -21,7 +21,8 @@
     "web-build": "expo build:web",
     "eject": "expo eject",
     "export": "npx expo export -p web",
-    "deploy": "netlify deploy --dir dist"
+    "deploy": "netlify deploy --dir dist",
+    "copy": "cp -rf public-not/ dist/"
   },
   "dependencies": {
     "@expo/metro-runtime": "^3.1.1",
