@@ -85,7 +85,7 @@ export default {
   // ///////////////////////////////////////////////////////////////////////////
   pB1: { paddingBottom: space1 },
   pB2: { paddingBottom: space2 },
-  pHHalf: { paddingHorizontal: space1 },
+  pHHalf: { paddingHorizontal: getResponsiveFontSize(space1, space2, space3) },
   pH1: { paddingHorizontal: space1 },
   pH2: { paddingHorizontal: space2 },
   pL1: { paddingLeft: space1 },
@@ -123,8 +123,9 @@ export default {
     ...fonts.bold,
     fontSize: getResponsiveFontSize(20, 24, 30),
     marginBottom: 4,
-    marginLeft: space1,
-    marginTop: getResponsiveFontSize(16, 26, 50)
+    marginLeft: getResponsiveFontSize(space1, space2, space3),
+    marginTop: getResponsiveFontSize(20, 36, 50),
+    userSelect: 'none'
   },
 
   // nav tab

@@ -4,9 +4,8 @@ import * as React from 'react';
 
 import { FlatList, StyleSheet, View } from 'react-native';
 
-import { colors, fonts, gStyle } from '../constants';
+import { colors, gStyle } from '../constants';
 
-import { getResponsiveFontSize } from '../constants/responsive';
 import FilmTile from './FilmTile';
 
 function ShowScroller({ dataset, type, handleTilePress }) {

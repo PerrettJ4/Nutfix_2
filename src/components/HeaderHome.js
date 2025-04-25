@@ -103,7 +103,7 @@ const styles = StyleSheet.create({
     backgroundColor: colors.black50,
     flexDirection: 'column',
     paddingBottom: 10,
-    paddingHorizontal: 16,
+    paddingHorizontal: '4vw',
     paddingTop: device.iPhoneNotch ? 54 : 10,
     position: 'absolute',
     width: '100vw',
@@ -123,13 +123,14 @@ const styles = StyleSheet.create({
     height: 35,
     justifyContent: 'space-between',
     width: '91vw'
+    // left: '3vw'
   },
   containerMenu: {
     alignItems: 'center',
     flexDirection: 'row',
+    // left: '3vw',
     flex: 1,
-    height: 35,
-    overflow: 'visible'
+    height: 35
   },
   text: {
     color: colors.white,

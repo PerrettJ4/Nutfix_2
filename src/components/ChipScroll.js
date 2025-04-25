@@ -33,8 +33,8 @@ const ChipScroll = ({
 
   const handlePress = (isOpaque, isSportActive, item, index) => {
     if (!isOpaque && !isSportActive) {
-      handleFilterPress(item, index);
-      setIndex(index);
+      //   handleFilterPress(item, index);
+      //   setIndex(index);
     }
   };
 
@@ -46,7 +46,7 @@ const ChipScroll = ({
   const translucentBackground = colors.black20;
 
   return (
-    <>
+    <View style={styles.chipRow}>
       {isActive && (
         <Pressable
           style={[styles.closeButton, { borderColor: colors.white60 }]}
@@ -63,10 +63,7 @@ const ChipScroll = ({
           isActive && { paddingLeft: '3vw' }
         ]}
         style={{
-          paddingRight: 500,
-          minWidth: '100%',
-          overflowX: 'scroll', // this is key for Web
-          flexGrow: 0 // <-- still ok here if you're not expecting list to grow vertically
+          paddingRight: 5000
         }}
         scrollEnabled={true}
         ref={ref}
@@ -104,7 +101,7 @@ const ChipScroll = ({
           );
         }}
       ></FlatList>
-    </>
+    </View>
   );
 };
 
@@ -126,11 +123,11 @@ const styles = StyleSheet.create({
   },
   chipRow: {
     // marginLeft: SCREEN_WIDTH * 0.02,
-    marginRight: '3vw',
+    // marginRight: '3vw',
     justifyContent: 'center',
     alignItems: 'center',
-    flexDirection: 'row',
-    overflow: 'auto' // this enables scroll on web
+    flexDirection: 'row'
+    // overflow: 'auto' // this enables scroll on web
   },
   pressable4: {
     borderRadius: getResponsiveFontSize(20, 30, 40),
@@ -144,7 +141,7 @@ const styles = StyleSheet.create({
     borderColor: colors.black,
     zIndex: 999,
     minWidth: getResponsiveFontSize(40, 50, 60),
-    marginRight: '3vw'
+    marginRight: getResponsiveFontSize(10, 16, 20)
   }
 });
 

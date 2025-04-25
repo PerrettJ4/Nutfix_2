@@ -5,7 +5,7 @@ const screenWidth = Dimensions.get('window').width;
 
 export const breakpoints = {
   mobile: 0,
-  tablet: 1100,
+  tablet: 700,
   desktop: 1400
 };
 

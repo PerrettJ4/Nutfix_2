@@ -48,5 +48,31 @@
     "actors": "Ben Affleck, Henry Cavill, Amy Adams",
     "year": "2016",
     "genre": "Action, Adventure, Sci-Fi"
+  },
+  {
+    "id": "tt0057115",
+    "title": "The Great Escape",
+    "image": "https://live.staticflickr.com/3284/2971595386_cd6ea8ec78_b.jpg",
+    "description": "Fearing that the actions of Superman are left unchecked, Batman takes on the Man of Steel, while the world wrestles with what kind of a hero it really needs."
+  },
+  {
+    "id": "tt10872600",
+    "title": "Spider-Man: No Way Home",
+    "image": "https://live.staticflickr.com/65535/47704948702_758ce4be4a_b.jpg",
+    "description": "lk"
+  },
+
+  {
+    "id": "tt0382932",
+    "title": "Ratatouille",
+    "image": "https://i0.wp.com/images.onwardstate.com/uploads/2012/12/Chef-Sneezy.jpg?fit=577%2C960&ssl=1",
+    "description": "lk"
+  },
+
+  {
+    "id": "tt0892769",
+    "title": "How to Train Your Dragon",
+    "image": "https://live.staticflickr.com/4512/37140680694_5748cb582e_b.jpg",
+    "description": "lk"
   }
 ]
