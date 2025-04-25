@@ -8,7 +8,7 @@ import Cast from '../components/Cast';
 import HeaderHome from '../components/HeaderHome';
 import PromotionBanner from '../components/PromotionBanner';
 import ShowScroller from '../components/ShowScroller';
-import useTopFilms, { dummyTopSeries } from '../hooks/useFetchTopFilms';
+import useTopFilms from '../hooks/useFetchTopFilms';
 import mockData from '../mockdata/data';
 import useFilmById from '../hooks/useFetchFilmById';
 import FilmPoster from '../components/FilmPoster';
@@ -30,7 +30,7 @@ function Home() {
     closeFilmModal
   } = useFilmById(id);
 
-  const { films: topFilms, loading, error } = useTopFilms(20);
+  const { films: topFilms, loading, error } = useTopFilms(200);
 
   const onScroll = (event) => {
     let show = showHeader;
@@ -90,7 +90,7 @@ function Home() {
         <Text style={gStyle.scrollHeading}>NUTFLIX ORIGINALS</Text>
         <ShowScroller
           handleTilePress={handleTilePress}
-          dataset={dummyTopSeries}
+          dataset={Object.values(mockData.topSeries)}
         />
         <Text style={gStyle.scrollHeading}>Docusquirrelies</Text>
         <ShowScroller

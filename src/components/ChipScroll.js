@@ -27,7 +27,7 @@ const ChipScroll = ({
       index,
       animated: true,
       viewPosition: 0
-      // viewOffset: normalize(7),
+      //   viewOffset: 100
     });
   }, [index]);
 
@@ -46,7 +46,7 @@ const ChipScroll = ({
   const translucentBackground = colors.black20;
 
   return (
-    <View style={styles.chipRow}>
+    <>
       {isActive && (
         <Pressable
           style={[styles.closeButton, { borderColor: colors.white60 }]}
@@ -56,10 +56,21 @@ const ChipScroll = ({
         </Pressable>
       )}
       <FlatList
-        style={[{ flexGrow: 0 }, device.iOS && { overflow: 'visible' }]}
+        contentContainerStyle={[
+          {
+            paddingRight: 500
+          },
+          isActive && { paddingLeft: '3vw' }
+        ]}
+        style={{
+          paddingRight: 500,
+          minWidth: '100%',
+          overflowX: 'scroll', // this is key for Web
+          flexGrow: 0 // <-- still ok here if you're not expecting list to grow vertically
+        }}
+        scrollEnabled={true}
         ref={ref}
         initialScrollIndex={0}
-        contentContainerStyle={{ paddingRight: '100vw' }}
         data={itemArray}
         keyExtractor={(item) => item}
         horizontal={true}
@@ -93,7 +104,7 @@ const ChipScroll = ({
           );
         }}
       ></FlatList>
-    </View>
+    </>
   );
 };
 
@@ -109,7 +120,6 @@ const styles = StyleSheet.create({
     borderRadius: 999,
     justifyContent: 'center',
     alignItems: 'center',
-    marginLeft: '3vw',
     height: getResponsiveFontSize(30, 36, 50),
     width: getResponsiveFontSize(30, 36, 50),
     backgroundColor: 'transparent'
@@ -119,7 +129,8 @@ const styles = StyleSheet.create({
     marginRight: '3vw',
     justifyContent: 'center',
     alignItems: 'center',
-    flexDirection: 'row'
+    flexDirection: 'row',
+    overflow: 'auto' // this enables scroll on web
   },
   pressable4: {
     borderRadius: getResponsiveFontSize(20, 30, 40),

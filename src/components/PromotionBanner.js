@@ -30,7 +30,7 @@ function PromotionBanner({ handleTilePress }) {
   };
 
   return (
-    <LinearGradient colors={['yellow', '#191919']} style={styles.container}>
+    <LinearGradient colors={['#855126', '#191919']} style={styles.container}>
       <ImageBackground
         source={images.squirrelsOnHorse}
         style={styles.imageBackground}
@@ -67,8 +67,8 @@ const styles = StyleSheet.create({
   imageBackground: {
     marginTop: getResponsiveFontSize(10, 14, 20) + topBannerHeight,
     height: 480,
-    width: '94vw',
-    left: '3vw',
+    width: '92vw',
+    left: '4vw',
     borderRadius: getResponsiveFontSize(10, 12, 15),
     overflow: 'hidden'
   },

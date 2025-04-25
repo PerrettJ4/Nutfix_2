@@ -1,6 +1,7 @@
 import nuttify from './nutify';
 
 const animals = [
+  'Stellar',
   'Knight',
   'Schindler',
   'Lord',

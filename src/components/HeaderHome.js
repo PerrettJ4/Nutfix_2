@@ -128,7 +128,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     flexDirection: 'row',
     flex: 1,
-    height: 35
+    height: 35,
+    overflow: 'visible'
   },
   text: {
     color: colors.white,
