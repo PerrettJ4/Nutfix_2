@@ -63,8 +63,6 @@ function More({ navigation }) {
         />
         <Text style={styles.versionText}>Version: 1.2.0</Text>
       </ScrollView>
-
-      <Cast />
     </View>
   );
 }

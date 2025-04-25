@@ -23,7 +23,7 @@ function Cast() {
 const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
-    backgroundColor: colors.castGrey,
+    backgroundColor: colors.white,
     borderRadius: 26,
     bottom: 16,
     height: 52,

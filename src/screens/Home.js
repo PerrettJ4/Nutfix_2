@@ -99,8 +99,6 @@ function Home() {
         />
         <View style={gStyle.spacer3} />
       </ScrollView>
-
-      <Cast />
     </View>
   );
 }

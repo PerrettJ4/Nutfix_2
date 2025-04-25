@@ -16,8 +16,6 @@ function TvShows() {
       <View style={gStyle.pHHalf}>
         <Text style={gStyle.heading}>TV Shows</Text>
       </View>
-
-      <Cast />
     </View>
   );
 }

@@ -3,32 +3,47 @@ import { Dimensions, Platform } from 'react-native';
 // android
 const android = Platform.OS === 'android';
 
-const iOS = Platform.OS === 'ios';
+const iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 const web = Platform.OS === 'web';
 const windowInfo = Dimensions.get('window');
-const { height, width } = windowInfo;
-const aspectRatio = height / width;
+const { height: dHeight, width: dWidth } = windowInfo;
+const aspectRatio = dHeight / dWidth;
+
+let height = dHeight;
+let width = dWidth;
+
+// Override with actual viewport size on web
+if (Platform.OS === 'web' && typeof window !== 'undefined') {
+  height = window.innerHeight;
+  width = window.innerWidth;
+}
+
+// Known notch devices (portrait orientation dimensions)
+const notchDimensions = [
+  { width: 375, height: 812 }, // iPhone X, XS, 11 Pro
+  { width: 390, height: 844 }, // iPhone 12, 12 Pro, 13, 13 Pro, 14
+  { width: 393, height: 852 }, // iPhone 14 Pro
+  { width: 414, height: 896 }, // iPhone XR, XS Max, 11, 11 Pro Max
+  { width: 428, height: 926 }, // iPhone 12 Pro Max, 13 Pro Max, 14 Plus
+  { width: 430, height: 932 } // iPhone 14 Pro Max
+];
+
+// Helper: match one of the known sizes
+const matchesNotchSize = notchDimensions.some(
+  (dim) =>
+    (width === dim.width && height === dim.height) ||
+    (height === dim.width && width === dim.height) // handle landscape mode
+);
+
+// iOS check
+const isIOS =
+  /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+  (navigator.userAgent.includes('Macintosh') && 'ontouchend' in document);
+
+const iPhoneNotch = isIOS;
 
 // is iPad
 const { isPad } = Platform;
-
-// is iPhone with Notch?
-// iPhoneX, iPhoneXs, iPhoneXr, iPhoneXs Max, iPhone 11, 12, 13, and 14
-let iPhoneNotch = false;
-if (iOS) {
-  // iphone screen breakdown
-  // https://blog.calebnance.com/development/iphone-ipad-pixel-sizes-guide-complete-list.html
-  if (
-    height === 812 ||
-    height === 844 ||
-    height === 852 ||
-    height === 896 ||
-    height === 926 ||
-    height === 932
-  ) {
-    iPhoneNotch = true;
-  }
-}
 
 export default {
   android,

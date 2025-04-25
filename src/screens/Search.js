@@ -14,8 +14,6 @@ function Search() {
           <HeaderSearch />
         </View>
       </TouchableWithoutFeedback>
-
-      <Cast />
     </React.Fragment>
   );
 }

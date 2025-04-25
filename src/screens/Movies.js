@@ -16,8 +16,6 @@ function Movies() {
       <View style={gStyle.pHHalf}>
         <Text style={gStyle.heading}>Movies</Text>
       </View>
-
-      <Cast />
     </View>
   );
 }

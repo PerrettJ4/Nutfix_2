@@ -103,7 +103,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     paddingBottom: 12,
     paddingHorizontal: 8,
-    paddingTop: device.iPhoneNotch ? 54 : 30,
+    paddingTop: device.iPhoneNotch ? 74 : 30,
     width: '100%'
   },
   containerInput: {

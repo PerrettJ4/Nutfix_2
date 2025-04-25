@@ -25,8 +25,6 @@ function Downloads() {
       <View style={styles.button}>
         <Text style={styles.buttonText}>FIND SOMETHING TO DOWNLOAD</Text>
       </View>
-
-      <Cast />
     </View>
   );
 }

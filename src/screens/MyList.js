@@ -16,8 +16,6 @@ function MyList() {
       <View style={gStyle.pHHalf}>
         <Text style={gStyle.heading}>My Stash</Text>
       </View>
-
-      <Cast />
     </View>
   );
 }

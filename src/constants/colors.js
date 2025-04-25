@@ -4,6 +4,7 @@ export default {
   black40: 'rgba(0, 0, 0, 0.4)',
   black50: 'rgba(0, 0, 0, 0.5)',
   white: '#fff',
+  white60: '#ffffffaa',
 
   // shared
   brandPrimary: '#d22f27',
