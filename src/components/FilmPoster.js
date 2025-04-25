@@ -14,8 +14,9 @@ import { colors } from '../constants';
 import squirrelfy from '../functions/squirrelfy';
 import PromotionPlay from './PromotionPlay';
 
+import { getResponsiveFontSize } from '../constants/responsive';
+import SvgArrowLeft from '../icons/Svg.ArrowLeft';
 import SvgInfo from '../icons/Svg.Info';
-import SvgHome from '../icons/Svg.Home';
 
 FilmPoster.propTypes = {
   film: PropTypes.shape({
@@ -75,6 +76,21 @@ function FilmPoster({ film, closeFilmModal }) {
               contentContainerStyle={styles.modalScrollContent}
               showsVerticalScrollIndicator={false}
             >
+              <View
+                style={{
+                  position: 'absolute',
+                  top: getResponsiveFontSize(10, 20, 30),
+                  zIndex: 999
+                }}
+              >
+                <PromotionPlay
+                  onPress={closeFilmModal}
+                  text=""
+                  icon={<SvgArrowLeft />}
+                  backgroundColor="red"
+                />
+              </View>
+
               <Image
                 source={{ uri: film.primaryImage }}
                 style={styles.poster}
@@ -121,21 +137,17 @@ function FilmPoster({ film, closeFilmModal }) {
                 <Text style={styles.bold}>Content Rating:</Text>{' '}
                 {squirrelfy(film.contentRating)}
               </Text>
-
               <View style={styles.buttonsContainer}>
-                {film.trailer && (
-                  <PromotionPlay onPress={openTrailer} text="Watch Trailer" />
-                )}
-                <PromotionPlay
-                  onPress={openIMDB}
-                  text="View on IMDb"
-                  icon={<SvgInfo />}
-                />
-                <PromotionPlay
-                  onPress={closeFilmModal}
-                  text="Close Modal"
-                  icon={<SvgHome />}
-                />
+                <View style={styles.buttonsContainer2}>
+                  {film.trailer && (
+                    <PromotionPlay onPress={openTrailer} text="Watch Trailer" />
+                  )}
+                  <PromotionPlay
+                    onPress={openIMDB}
+                    text="View on IMDb"
+                    icon={<SvgInfo />}
+                  />
+                </View>
               </View>
             </ScrollView>
           </View>
@@ -203,7 +215,12 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'column',
     gap: 6,
-    marginTop: 10
+    marginVertical: getResponsiveFontSize(10, 20, 30)
+  },
+  buttonsContainer2: {
+    display: 'flex',
+    flexDirection: 'row',
+    gap: 6
   }
 });
 

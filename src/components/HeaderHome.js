@@ -28,7 +28,7 @@ function HeaderHome({ all, show }) {
   const top = React.useRef(new Animated.Value(0)).current;
 
   const topBannerHeight = device.iOS
-    ? getResponsiveFontSize(99 + 44, 103 + 44, 115 + 44)
+    ? getResponsiveFontSize(99 + 44, 147 + 44, 115 + 44)
     : getResponsiveFontSize(99, 103, 115);
 
   React.useEffect(() => {
