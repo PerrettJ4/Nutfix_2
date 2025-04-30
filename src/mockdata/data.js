@@ -8,11 +8,11 @@ import topFilms from './topFilms.json';
 import topSeries from './topSeries.json';
 
 export default {
-  nuttyAbout,
-  myList,
   previews,
+  myList,
+  topFilms,
+  nuttyAbout,
   watchItAgain,
   docusquirrelies,
-  topFilms,
   topSeries
 };

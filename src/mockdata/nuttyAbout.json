@@ -1,13 +1,15 @@
 [
   {
-    "id": "tt0105236",
-    "title": "Reservoir Dogs",
-    "image": "https://photos1.blogger.com/blogger/386/2428/1600/squirrel_-_in_sunglasses_and_cigarette.0.jpg",
-    "description": "When a simple jewellery heist goes horribly wrong, the surviving criminals begin to suspect that one of them is a police informant.",
-    "rating": 83,
-    "actors": "Harvey Keitel, Tim Roth, Michael Madsen",
-    "year": "1992",
-    "genre": "Crime, Drama, Thriller"
+    "id": "tt0110357",
+    "title": "The Lion King",
+    "image": "https://media.istockphoto.com/id/1397466166/photo/squirrel-sits-on-a-branch-in-the-autumn-forest-and-looks-away-autumn-landscape.jpg?s=612x612&w=0&k=20&c=I9wA7smlt0eKING2I2HVTIlzRKgHfDdNDTDpXYAb_gI=",
+    "description": "lk"
+  },
+  {
+    "id": "tt9362722",
+    "title": "Spider-Man: Across the Spider-Verse",
+    "image": "https://guloinnature.com/wp-content/uploads/2022/08/5-5-e1662909641839-901x991.png",
+    "description": "lk"
   },
   {
     "id": "tt0068646",
@@ -30,6 +32,17 @@
     "genre": "Action, Sci-Fi"
   },
   {
+    "id": "tt0105236",
+    "title": "Reservoir Dogs",
+    "image": "https://photos1.blogger.com/blogger/386/2428/1600/squirrel_-_in_sunglasses_and_cigarette.0.jpg",
+    "description": "When a simple jewellery heist goes horribly wrong, the surviving criminals begin to suspect that one of them is a police informant.",
+    "rating": 83,
+    "actors": "Harvey Keitel, Tim Roth, Michael Madsen",
+    "year": "1992",
+    "genre": "Crime, Drama, Thriller"
+  },
+
+  {
     "id": "tt0063442",
     "title": "Planet of the Apes",
     "image": "https://s.abcnews.com/images/Lifestyle/CT_squirrels_on_horse_01_as_160527_4x3_992.jpg",
@@ -42,7 +55,7 @@
   {
     "id": "tt2975590",
     "title": "Batman v Superman: Dawn of Justice",
-    "image": "https://i.pinimg.com/originals/6d/69/1f/6d691f916121f6b69764a44cd53dcd34.jpg",
+    "image": "https://www.pressandjournal.co.uk/wp-content/uploads/sites/2/2019/03/SWNS_SUPERMAN_SQUIRREL_02.jpg",
     "description": "Fearing that the actions of Superman are left unchecked, Batman takes on the Man of Steel, while the world wrestles with what kind of a hero it really needs.",
     "rating": 64,
     "actors": "Ben Affleck, Henry Cavill, Amy Adams",
@@ -73,6 +86,12 @@
     "id": "tt0892769",
     "title": "How to Train Your Dragon",
     "image": "https://live.staticflickr.com/4512/37140680694_5748cb582e_b.jpg",
+    "description": "lk"
+  },
+  {
+    "id": "tt0071562",
+    "title": "The Godfather Part II",
+    "image": "https://images.unsplash.com/photo-1638438889380-fd5280d5b665?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "description": "lk"
   }
 ]

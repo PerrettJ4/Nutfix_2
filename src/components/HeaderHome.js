@@ -104,7 +104,7 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     paddingBottom: 10,
     paddingHorizontal: '4vw',
-    paddingTop: device.iPhoneNotch ? 54 : 10,
+    paddingTop: device.iOS ? 54 : 10,
     position: 'absolute',
     width: '100vw',
     zIndex: 10,

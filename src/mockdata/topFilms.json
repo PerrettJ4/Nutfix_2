@@ -1,27 +1,14 @@
 [
   {
-    "id": "tt0068646",
-    "title": "The Godfather",
-    "image": "https://i.pinimg.com/736x/1c/2e/84/1c2e84c78364892259c64e46aaa6c3f1.jpg",
-    "description": "lk"
-  },
-  {
     "id": "tt0468569",
     "title": "The Dark Knight",
     "image": "https://pics.craiyon.com/2023-11-16/_eLh4b4dQeChWrrN6cYAEg.webp",
     "description": "lk"
   },
   {
-    "id": "tt0071562",
-    "title": "The Godfather Part II",
-    "image": "https://images.unsplash.com/photo-1638438889380-fd5280d5b665?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "description": "lk"
-  },
-
-  {
-    "id": "tt0167260",
-    "title": "The Lord of the Rings: The Return of the King",
-    "image": "https://preview.redd.it/lord-of-the-rings-characters-as-animals-v0-6vtf6lzcpric1.png?width=640&crop=smart&auto=webp&s=b5089fe1d12f4e2df96aa7e4bfa90d75064b9fa1",
+    "id": "tt0073486",
+    "title": "One Flew Over the Cuckoo's Nest",
+    "image": "https://critterstop.com/nitropack_static/wuKUaxqsmqLhAYRpfOaXVBNknEpAdAKp/assets/images/optimized/rev-7d6d4fa/critterstop.com/wp-content/uploads/2024/04/Common-Locations-for-Squirrel-Nests-1024x741.webp",
     "description": "lk"
   },
   {
@@ -30,19 +17,26 @@
     "image": "https://i.redd.it/zrnmkpkw6kk51.jpg",
     "description": "lk"
   },
+
   {
     "id": "tt0120737",
     "title": "The Lord of the Rings: The Fellowship of the Ring",
-    "image": "https://i.redd.it/the-lord-of-the-rings-reimagined-v0-uj8b8zjwwh9b1.png?width=1456&format=png&auto=webp&s=9f972cc74d07a3a51da61329a084830ce24488cd",
+    "image": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/15DFE/production/_120589598_squirrels.jpg",
     "description": "lk"
   },
-
   {
     "id": "tt0167261",
     "title": "The Lord of the Rings: The Two Towers",
-    "image": "https://i.redd.it/gbzyt15djy691.jpg",
+    "image": "https://www.shutterstock.com/editorial/image-editorial/MazdQ8x3N4zbk9y9NDY5MA==/squirrel-examines-jenga-tower-440nw-3397264c.jpg",
     "description": "lk"
   },
+  {
+    "id": "tt0167260",
+    "title": "The Lord of the Rings: The Return of the King",
+    "image": "https://live.staticflickr.com/65535/49738670062_a85e94a4b8_c.jpg",
+    "description": "lk"
+  },
+
   {
     "id": "tt0099685",
     "title": "Goodfellas",
@@ -53,32 +47,6 @@
     "id": "tt0816692",
     "title": "Interstellar",
     "image": "https://nicenews.com/wp-content/uploads/sites/2/2023/03/iStock-1282229118-1024x683-2.jpg?w=1024",
-    "description": "lk"
-  },
-  {
-    "id": "tt0073486",
-    "title": "One Flew Over the Cuckoo's Nest",
-    "image": "https://critterstop.com/nitropack_static/wuKUaxqsmqLhAYRpfOaXVBNknEpAdAKp/assets/images/optimized/rev-7d6d4fa/critterstop.com/wp-content/uploads/2024/04/Common-Locations-for-Squirrel-Nests-1024x741.webp",
-    "description": "lk"
-  },
-  {
-    "id": "tt0103064",
-    "title": "Terminator 2: Judgment Day",
-    "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/bc1f73f3-a6fe-4c6d-ade7-57429e0ea9c0/d5w4szf-18b9271d-1f39-4835-967b-ee6308c36f07.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2JjMWY3M2YzLWE2ZmUtNGM2ZC1hZGU3LTU3NDI5ZTBlYTljMFwvZDV3NHN6Zi0xOGI5MjcxZC0xZjM5LTQ4MzUtOTY3Yi1lZTYzMDhjMzZmMDcuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.aN8t8Sex088AvjnI7pxe0eAtWmidKbZWKKnxeogMKzc",
-    "description": "lk"
-  },
-
-  {
-    "id": "tt0110357",
-    "title": "The Lion King",
-    "image": "https://media.istockphoto.com/id/1397466166/photo/squirrel-sits-on-a-branch-in-the-autumn-forest-and-looks-away-autumn-landscape.jpg?s=612x612&w=0&k=20&c=I9wA7smlt0eKING2I2HVTIlzRKgHfDdNDTDpXYAb_gI=",
-    "description": "lk"
-  },
-
-  {
-    "id": "tt9362722",
-    "title": "Spider-Man: Across the Spider-Verse",
-    "image": "https://guloinnature.com/wp-content/uploads/2022/08/5-5-e1662909641839-901x991.png",
     "description": "lk"
   }
 ]

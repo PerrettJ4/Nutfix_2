@@ -80,14 +80,16 @@ function FilmPoster({ film, closeFilmModal }) {
                 style={{
                   position: 'absolute',
                   top: getResponsiveFontSize(10, 20, 30),
-                  zIndex: 999
+                  zIndex: 999,
+                  top: 0,
+                  left: 0
                 }}
               >
                 <PromotionPlay
                   onPress={closeFilmModal}
                   text=""
                   icon={<SvgArrowLeft />}
-                  backgroundColor="red"
+                  backgroundColor={colors.brandPrimary}
                 />
               </View>
 
@@ -125,10 +127,12 @@ function FilmPoster({ film, closeFilmModal }) {
               <Text style={styles.details}>
                 <Text style={styles.bold}>Release Year:</Text> {film.startYear}
               </Text>
-              <Text style={styles.details}>
-                <Text style={styles.bold}>Runtime:</Text> {film.runtimeMinutes}{' '}
-                min
-              </Text>
+              {film.runtimeMinutes && (
+                <Text style={styles.details}>
+                  <Text style={styles.bold}>Runtime:</Text>{' '}
+                  {film.runtimeMinutes} min
+                </Text>
+              )}
               <Text style={styles.details}>
                 <Text style={styles.bold}>Production:</Text>{' '}
                 {squirrelfy(production)}
